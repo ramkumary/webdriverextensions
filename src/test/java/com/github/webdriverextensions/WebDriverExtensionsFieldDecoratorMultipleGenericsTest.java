@@ -2,6 +2,9 @@ package com.github.webdriverextensions;
 
 import static com.github.webdriverextensions.Bot.assertTextEquals;
 import static com.github.webdriverextensions.Bot.open;
+
+import com.github.webdriverextensions.internal.BotUtils;
+import com.github.webdriverextensions.internal.ElementTag;
 import com.github.webdriverextensions.junitrunner.WebDriverRunner;
 import com.github.webdriverextensions.junitrunner.annotations.Chrome;
 import java.util.List;
@@ -68,4 +71,5 @@ public class WebDriverExtensionsFieldDecoratorMultipleGenericsTest {
         assertTextEquals("typeArgumentInList.get(1).secondTypeVariableInList.get(1).secondTypeArgument", typeArgumentInList.get(1).secondTypeVariableInList.get(1).secondTypeArgument);
     }
 
+   
 }
